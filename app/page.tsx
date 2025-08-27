@@ -285,7 +285,7 @@ export default function WalletReputationChecker() {
             </div>
           </div>
 
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center min-h-[calc(100vh-120px)]">
             <div className="w-full max-w-2xl space-y-8">
               <div className="text-center space-y-4">
                 <div className="flex items-center justify-center gap-3">
@@ -305,7 +305,7 @@ export default function WalletReputationChecker() {
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div className="flex gap-2">
+                  <div className="flex flex-col sm:flex-row gap-2">
                     <Input
                       placeholder="0x742d35Cc6634C0532925a3b8D4C9db96590e4265"
                       value={walletAddress}
@@ -315,7 +315,7 @@ export default function WalletReputationChecker() {
                     <Button
                       onClick={handleCheckReputation}
                       disabled={!walletAddress.trim() || isLoading}
-                      className="bg-purple-600 hover:bg-purple-700 text-white px-6"
+                      className="bg-purple-600 hover:bg-purple-700 text-white px-6 w-full sm:w-auto"
                     >
                       {isLoading ? "Checking..." : "Check Reputation"}
                     </Button>
