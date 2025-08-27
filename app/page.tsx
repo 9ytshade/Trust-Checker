@@ -290,7 +290,7 @@ export default function WalletReputationChecker() {
               <div className="text-center space-y-4">
                 <div className="flex items-center justify-center gap-3">
                   <Eye className="w-8 h-8 text-purple-400" />
-                  <h1 className="text-4xl font-bold text-white hidden md:block">TRUST CHECKER</h1>
+                  <h1 className="text-4xl font-bold text-white">TRUST CHECKER</h1>
                 </div>
                 <p className="text-gray-400 text-lg">
                   Discover trust scores and reputation data from the Intuition Knowledge Graph
